@@ -4,6 +4,20 @@
 
 See [spec.cy.js](./cypress/e2e/spec.cy.js)
 
+## DOM detached error
+
+![Detached error](./images/error.png)
+
+## With applied fix
+
+```js
+// spec file
+import { registerDetachedElementFix } from './util'
+registerDetachedElementFix()
+```
+
+![Fixed test](./images/fixed.png)
+
 ## Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2022
